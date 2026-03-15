@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FeedAnchor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0a1628; --blue: #0A66C2; --text: #1a2332;
+      --text-2: #4a5568; --border: #e2e8f0; --bg: #f7f8fa;
+    }
+    body { font-family: 'DM Sans', -apple-system, sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+
+    nav {
+      padding: 0 40px; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: white; border-bottom: 1px solid var(--border);
+    }
+    .nav-brand {
+      font-family: 'Fraunces', serif; font-size: 18px; font-weight: 600;
+      color: var(--navy); text-decoration: none; display: flex; align-items: center; gap: 8px;
+    }
+    .nav-icon { width: 28px; height: 28px; background: var(--blue); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+
+    .container { max-width: 720px; margin: 60px auto; padding: 0 24px 80px; }
+
+    .page-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue); margin-bottom: 12px; }
+
+    h1 { font-family: 'Fraunces', serif; font-size: 38px; font-weight: 700; color: var(--navy); margin-bottom: 8px; letter-spacing: -0.02em; }
+
+    .updated { font-size: 13px; color: var(--text-2); margin-bottom: 48px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
+
+    h2 { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: var(--navy); margin: 40px 0 12px; }
+
+    p { font-size: 15px; color: var(--text-2); line-height: 1.75; margin-bottom: 14px; }
+
+    ul { margin: 0 0 14px 20px; }
+    ul li { font-size: 15px; color: var(--text-2); line-height: 1.75; margin-bottom: 6px; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    .highlight {
+      background: #EBF3FB; border-left: 3px solid var(--blue);
+      padding: 16px 20px; border-radius: 0 6px 6px 0;
+      margin: 24px 0;
+    }
+    .highlight p { margin: 0; color: var(--text); }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer { text-align: center; padding: 28px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-2); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">
+    <div class="nav-icon">🔖</div>
+    FeedAnchor
+  </a>
+  <a href="/" style="font-size:13px; color: var(--text-2); text-decoration:none;">← Back to home</a>
+</nav>
+
+<div class="container">
+  <div class="page-label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: March 15, 2026</p>
+
+  <div class="highlight">
+    <p><strong>The short version:</strong> FeedAnchor saves LinkedIn post URLs and author names locally on your device. We use Google for sign-in and Stripe for payments. We do not sell your data, scrape LinkedIn content, or share your information with third parties.</p>
+  </div>
+
+  <h2>1. What We Collect</h2>
+  <p>FeedAnchor collects the minimum data necessary to provide the service:</p>
+  <ul>
+    <li><strong>Account information:</strong> Your name, email address, and profile picture, obtained through Google Sign-In when you create an account.</li>
+    <li><strong>Saved post data:</strong> The public URLs of LinkedIn posts you pause on, and the author's publicly visible name. This data is stored locally on your device using your browser's built-in storage.</li>
+    <li><strong>Usage data:</strong> A count of how many posts you save per day, used solely to enforce free tier limits. This is stored on our server and is not linked to any personally identifiable information beyond your account.</li>
+    <li><strong>Payment information:</strong> If you upgrade to Pro, your payment is processed entirely by Stripe. FeedAnchor never sees or stores your credit card details.</li>
+  </ul>
+
+  <h2>2. What We Do Not Collect</h2>
+  <ul>
+    <li>We do not collect, store, or transmit the content of LinkedIn posts</li>
+    <li>We do not collect your LinkedIn credentials or access your LinkedIn account</li>
+    <li>We do not track your browsing activity outside of LinkedIn post URLs you pause on</li>
+    <li>We do not use advertising trackers or analytics SDKs</li>
+    <li>We do not sell, rent, or share your personal data with any third parties for marketing purposes</li>
+  </ul>
+
+  <h2>3. How We Use Your Data</h2>
+  <p>The data we collect is used exclusively to:</p>
+  <ul>
+    <li>Identify your account and maintain your sign-in session</li>
+    <li>Enforce free tier daily save limits</li>
+    <li>Process Pro subscription payments via Stripe</li>
+    <li>Restore your Pro status when you sign in on a new device</li>
+  </ul>
+
+  <h2>4. Data Storage & Security</h2>
+  <p>Saved posts are stored locally in your browser using <code>chrome.storage.local</code>. This data never leaves your device unless you explicitly use the export feature (CSV or Notion copy), in which case you control where it goes.</p>
+  <p>Your account information (email, name, Pro status) is stored on our secure server hosted on Railway. All data in transit is encrypted via HTTPS. We use industry-standard practices to protect your data.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>FeedAnchor uses the following third-party services:</p>
+  <ul>
+    <li><strong>Google OAuth:</strong> Used for sign-in. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+    <li><strong>Stripe:</strong> Used for payment processing. Governed by <a href="https://stripe.com/privacy" target="_blank">Stripe's Privacy Policy</a>. We never receive or store your card details.</li>
+    <li><strong>Railway:</strong> Our server infrastructure provider. Data is hosted in the United States.</li>
+  </ul>
+
+  <h2>6. LinkedIn Compliance</h2>
+  <p>FeedAnchor operates in compliance with LinkedIn's User Agreement and is functionally equivalent to bookmarking a public URL. We only store the public post URL and the author's publicly visible name — the same information available to any logged-in LinkedIn user. We do not scrape, extract, or store post content, comments, or any non-public information.</p>
+
+  <h2>7. Data Retention & Deletion</h2>
+  <p>Saved posts remain on your device until you clear them using the "Clear all" button in the extension, or until you uninstall the extension.</p>
+  <p>Your account data on our server (email, name, Pro status) is retained while your account is active. To request deletion of your account and all associated server-side data, contact us at the email below and we will process your request within 30 days.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>FeedAnchor is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify users of material changes by updating the "Last updated" date at the top of this page. Continued use of FeedAnchor after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>10. Contact</h2>
+  <p>If you have any questions about this Privacy Policy or your data, please contact us at:</p>
+  <p><strong>Email:</strong> <a href="mailto:privacy@feedanchor.com">privacy@feedanchor.com</a></p>
+  <p><strong>Website:</strong> <a href="https://feedanchor.com">feedanchor.com</a></p>
+</div>
+
+<footer>
+  © 2026 FeedAnchor · <a href="/">Home</a>
+</footer>
+
+</body>
+</html>
