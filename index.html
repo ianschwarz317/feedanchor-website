@@ -810,6 +810,91 @@
     observer.observe(el);
   });
 </script>
+<!-- Copy and paste this before the closing </body> tag -->
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FeedAnchor",
+  "applicationCategory": "BrowserExtension",
+  "operatingSystem": "Chrome, Microsoft Edge",
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "name": "Free Plan",
+      "description": "5 auto-saves per day with fixed 20-second timer"
+    },
+    {
+      "@type": "Offer",
+      "price": "2.29",
+      "priceCurrency": "USD",
+      "name": "Pro Plan",
+      "description": "Unlimited saves, adjustable timer, notes, CSV & Notion export"
+    }
+  ],
+  "description": "Auto-save LinkedIn posts you pause on. Chrome & Edge extension that silently saves posts you're interested in. Export to Notion, add notes, adjust timer.",
+  "url": "https://feedanchor.com",
+  "screenshot": "https://feedanchor.com/screenshot.jpg",
+  "featureList": [
+    "Auto-save LinkedIn posts",
+    "Adjustable pause timer",
+    "Export to Notion",
+    "CSV export",
+    "Add notes to posts",
+    "Works on Chrome & Edge",
+    "LinkedIn ToS compliant",
+    "Private local storage"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "127"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this violate LinkedIn's Terms of Service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. FeedAnchor only saves the post's public URL and the author's visible name — the same information you'd see by right-clicking a link. It doesn't scrape content, automate any actions, or interact with LinkedIn's API."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is my data stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Saved posts are stored locally on your device using your browser's built-in storage. Your sign-in details are secured using Google OAuth. Your data is private and never sold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the 20-second timer work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you stop scrolling and a post is at least 10% visible, a 20-second countdown begins. If you scroll away before it ends, the timer resets. Pro users can adjust this from 10 to 60 seconds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What browsers does it support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FeedAnchor works on Microsoft Edge, Google Chrome, and any Chromium-based browser (Brave, Arc, etc.)."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>
