@@ -1,0 +1,12 @@
+# robots.txt for feedanchor.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://feedanchor.com/sitemap.xml
+
+# Disallow admin/private pages
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
