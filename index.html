@@ -199,59 +199,22 @@
       display: flex; align-items: center; gap: 6px;
     }
 
-    /* Hero video */
+    /* Hero visual */
     .hero-visual {
       position: relative;
     }
 
-    .video-container {
+    .screenshot-container {
       position: relative;
-      background: var(--navy);
       border-radius: 16px;
       overflow: hidden;
-      aspect-ratio: 16/10;
-      box-shadow: 0 24px 80px rgba(10, 22, 40, 0.25), 0 0 0 1px rgba(255,255,255,0.08);
+      box-shadow: 0 24px 80px rgba(10, 22, 40, 0.25), 0 0 0 1px rgba(0,0,0,0.06);
     }
 
-    .video-placeholder {
-      width: 100%; height: 100%;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 16px;
-      background: linear-gradient(135deg, #0a1628 0%, #12213d 50%, #0a2a4a 100%);
-      cursor: pointer;
-    }
-
-    /* If you have a real video, replace the placeholder with: */
-    /* <video src="demo.mp4" controls poster="thumb.jpg"></video> */
-
-    .video-placeholder iframe {
-      position: absolute;
-      inset: 0;
+    .screenshot-container img {
       width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    .play-btn {
-      width: 64px; height: 64px;
-      background: rgba(255,255,255,0.12);
-      border: 2px solid rgba(255,255,255,0.3);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 24px;
-      backdrop-filter: blur(8px);
-      transition: background 0.2s, transform 0.2s;
-      cursor: pointer;
-    }
-    .play-btn:hover { background: rgba(255,255,255,0.2); transform: scale(1.05); }
-
-    .video-label {
-      font-size: 13px;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-weight: 600;
+      height: auto;
+      display: block;
     }
 
     .video-badge {
@@ -605,19 +568,9 @@
     </div>
 
     <div class="hero-visual">
-      <div class="video-badge">Watch demo</div>
-      <div class="video-container">
-        <!-- 
-          REPLACE THIS PLACEHOLDER WITH YOUR VIDEO.
-          Option A — YouTube embed:
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
-          Option B — Self-hosted video:
-            <video src="demo.mp4" controls poster="thumb.jpg" style="width:100%;height:100%;object-fit:cover"></video>
-        -->
-        <div class="video-placeholder" id="videoPlaceholder">
-          <div class="play-btn" onclick="loadVideo()">▶</div>
-          <div class="video-label">Watch 90-second demo</div>
-        </div>
+      <div class="video-badge">See it in action</div>
+      <div class="screenshot-container">
+        <img src="hero-screenshot.png" alt="FeedAnchor extension showing saved LinkedIn posts" />
       </div>
     </div>
   </div>
@@ -771,17 +724,6 @@
 <div class="footer-note">© 2026 FeedAnchor · Not affiliated with LinkedIn or Microsoft · <a href="mailto:support@feedanchor.com" style="color:var(--text-3); text-decoration:none;">support@feedanchor.com</a> · <a href="/privacy" style="color:var(--text-3); text-decoration:none;">Privacy Policy</a></div></footer>
 
 <script>
-  // Video loading — replace YOUR_YOUTUBE_VIDEO_ID with your actual video ID
-  function loadVideo() {
-    const placeholder = document.getElementById('videoPlaceholder');
-    const videoId = 'YOUR_YOUTUBE_VIDEO_ID'; // ← Replace this
-    if (videoId === 'YOUR_YOUTUBE_VIDEO_ID') {
-      alert('Add your YouTube video ID to the loadVideo() function in the HTML file.');
-      return;
-    }
-    placeholder.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" allowfullscreen allow="autoplay"></iframe>`;
-  }
-
   // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
